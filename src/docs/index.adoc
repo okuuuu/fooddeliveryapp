@@ -1,0 +1,46 @@
+= Food Delivery API
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+[[resources]]
+== Resources
+
+[[resources-get-delivery-fee]]
+=== Get Delivery Fee
+A `GET` request to `/delivery-fee` will return the calculated delivery fee for the specified city and vehicle type.
+
+Request parameters:
+
+- `city`: The city where the delivery is taking place (Tallinn, Tartu, Pärnu).
+- `vehicleType`: The type of vehicle used for delivery (Car, Scooter, Bike).
+
+Example request:
+
+[source,http]
+----
+GET /delivery-fee?city=Tallinn&vehicleType=CAR HTTP/1.1
+Host: localhost:8080
+----
+
+Example response:
+
+[source,http]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 3
+
+4.0
+----
+
+Response fields:
+
+- `response`: The calculated delivery fee.
+
+include::{snippets}/get-delivery-fee/http-request.adoc[]
+include::{snippets}/get-delivery-fee/http-response.adoc[]
+include::{snippets}/get-delivery-fee/response-body.adoc[]
