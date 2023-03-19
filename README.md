@@ -1,4 +1,4 @@
-# Food Delivery Fee Calculator
+# Food Delivery App
 
 This application calculates the delivery fee for food couriers based on regional base fee, vehicle type, and weather conditions.
 
@@ -27,8 +27,8 @@ This application calculates the delivery fee for food couriers based on regional
 
 1. Clone the repository:
     ```
-    git clone https://github.com/your-username/food-delivery-fee-calculator.git
-    cd food-delivery-fee-calculator
+    git clone https://github.com/okuuuu/fooddeliveryapp.git
+    cd fooddeliveryapp
     ```
 2. Build the project:
     ```
