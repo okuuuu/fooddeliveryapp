@@ -7,6 +7,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+// A repository interface extending JpaRepository, used for
+// interacting with the application's database to store and retrieve weather data.
 @Repository
 public interface WeatherDataRepository extends JpaRepository<WeatherData, Long> {
     @Query("SELECT wd FROM WeatherData wd WHERE wd.name = ?1 ORDER BY wd.timestamp DESC")

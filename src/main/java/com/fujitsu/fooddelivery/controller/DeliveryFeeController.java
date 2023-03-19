@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
 
+// A REST controller that handles HTTP requests for calculating the delivery fee.
+// Exposes the /delivery-fee endpoint, which accepts city and vehicle as
+// input parameters and returns the calculated delivery fee or an error message.
 @RestController
 public class DeliveryFeeController {
     @Autowired

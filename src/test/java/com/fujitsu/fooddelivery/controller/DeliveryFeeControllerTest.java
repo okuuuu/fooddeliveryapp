@@ -26,6 +26,9 @@ import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.docu
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+// A test class for the DeliveryFeeController, which uses Spring REST Docs to generate
+// documentation snippets based on the test cases. It tests the /delivery-fee endpoint
+// to ensure that it returns the correct responses for different input parameters.
 @ExtendWith({RestDocumentationExtension.class, SpringExtension.class})
 @WebMvcTest(DeliveryFeeController.class)
 public class DeliveryFeeControllerTest {

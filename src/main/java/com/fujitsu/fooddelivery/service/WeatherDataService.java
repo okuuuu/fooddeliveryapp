@@ -17,6 +17,9 @@ import org.springframework.web.client.RestTemplate;
 import java.io.StringReader;
 import java.util.*;
 
+// A service class responsible for fetching weather data from the external
+// API, parsing the response, and storing the weather data in the application's
+// database. Also provides methods to query the latest weather data for a specific city.
 @Service
 public class WeatherDataService {
     @Autowired
@@ -82,8 +85,5 @@ public class WeatherDataService {
         } else {
             return null;
         }
-    }
-    public boolean isWeatherDataAvailable() {
-        return weatherDataRepository.count() > 0;
     }
 }

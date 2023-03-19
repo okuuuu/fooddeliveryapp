@@ -11,6 +11,11 @@ import java.util.Map;
 
 import static com.fujitsu.fooddelivery.service.VehicleType.*;
 
+// A service class that contains the business logic for calculating
+// the delivery fee. Handles different factors, such as base fees,
+// vehicle type fees, and weather-related extra fees, to compute the
+// final delivery fee. Provides maps to transform string type input into
+// VehicleType or to the corresponding weather station.
 @Service
 public class DeliveryFeeService {
 

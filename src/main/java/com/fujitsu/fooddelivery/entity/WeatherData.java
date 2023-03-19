@@ -5,6 +5,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+// A Java class representing the weather data entity. It contains
+// fields to store the weather data, such as the city name, timestamp, and weather phenomena.
 @Entity
 public class WeatherData {
     @Id
